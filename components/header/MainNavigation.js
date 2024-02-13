@@ -59,7 +59,7 @@ const Navbar = () => {
           <div className="flex justify-between items-center">
             {/* Logo section */}
             <div data-aos="fade-down" data-aos-once="true">
-              <Link href="#" className="flex hover:scale-105 duration-200">
+              <Link href="/" className="flex hover:scale-105 duration-200">
                 <Image src={Logo} alt="Logo" className="w-56" />
               </Link>
             </div>

@@ -71,13 +71,13 @@ const Footer = () => {
             <p className="text-md mt-7">Contact Us</p>
             {/* Social Handle */}
             <div className="flex items-center gap-4 mt-6">
-              <Link href="">
+              <Link href="/">
                 <FaInstagram className="text-2xl hover:text-blueColor duration-300" />
               </Link>
-              <Link href="">
+              <Link href="/">
                 <FaFacebook className="text-2xl hover:text-blueColor duration-300" />
               </Link>
-              <Link href="">
+              <Link href="/">
                 <FaLinkedin className="text-2xl hover:text-blueColor duration-300" />
               </Link>
             </div>
