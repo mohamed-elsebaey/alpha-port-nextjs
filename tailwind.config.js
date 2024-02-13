@@ -24,15 +24,7 @@ module.exports = {
         blueColor: "#44c8f5",
         grayColor: "#212529",
         bgGrayColor: "#333132",
-
-        designColor: "#ff014f",
-
-        primary: "#000000",
         secondary: "#ffffff",
-        secondary2: "#abb8c3",
-        brandDark: "#270c03",
-        dark: "#1e1e1e",
-        light: "#f5f5f5",
       },
       container: {
         center: true,
