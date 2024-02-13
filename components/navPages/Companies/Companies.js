@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import Namaa from "../../../public/images/logo/namaa.png";
-import AlphaDates from "../../../public/images/logo/alphaDates.png";
-import Basiqat from "../../../public/images/logo/basiqat.png";
-import AlphaHerbs from "../../../public/images/logo/alphaHerbs.png";
+import Namaa from "@/public/images/logo/namaa.png";
+import AlphaDates from "@/public/images/logo/alphaDates.png";
+import Basiqat from "@/public/images/logo/basiqat1.png";
+import AlphaHerbs from "@/public/images/logo/alphaHerbs.png";
 
 const CompaniesData = [
   {
@@ -45,7 +45,7 @@ const Companies = () => {
         <div className="container text-bgGrayColor">
           {/* Heading section  */}
           <div className="text-center my-16">
-            <h1 className="text-4xl font-bold font-cursive ">Our Companies</h1>
+            <h1 className="text-4xl font-bold ">Our Companies</h1>
           </div>
 
           {/* Company Card section  */}
@@ -56,7 +56,7 @@ const Companies = () => {
                 data-aos="fade-up"
                 // data-aos-once="true"
                 data-aos-delay={Company.aosDelay}
-                className="rounded-2xl bg-white hover:bg-blueColor/10 shadow-xl duration-300 max-w-[300px] min-h-full min-w-full flex-auto justify-center content-between"
+                className="rounded-2xl bg-white md:hover:bg-blueColor/10 shadow-xl duration-300 max-w-[300px] min-h-full min-w-full flex-auto justify-center content-between"
               >
                 <Image
                   src={Company.img}
