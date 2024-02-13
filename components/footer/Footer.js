@@ -7,7 +7,7 @@ import Link from "next/link";
 const FooterLinks = [
   {
     title: "Home",
-    link: "",
+    link: "/",
   },
   {
     title: "About",
@@ -15,43 +15,43 @@ const FooterLinks = [
   },
   {
     title: "Products",
-    link: "",
+    link: "/",
   },
   {
     title: "Services",
-    link: "",
+    link: "/",
   },
 ];
 const HelpLinks = [
   {
     title: "Customer Support",
-    link: "",
+    link: "/",
   },
   {
     title: "Delivery Details",
-    link: "",
+    link: "/",
   },
   {
     title: "Terms & Conditions",
-    link: "",
+    link: "/",
   },
   {
     title: "Privacy Policy",
-    link: "",
+    link: "/",
   },
 ];
 const ResourcesLinks = [
   {
     title: "Free Ebooks",
-    link: "",
+    link: "/",
   },
   {
     title: "How To Blog",
-    link: "",
+    link: "/",
   },
   {
     title: "Subscribe TCJ",
-    link: "",
+    link: "/",
   },
 ];
 const Footer = () => {
@@ -65,7 +65,7 @@ const Footer = () => {
               <Image
                 src={Logo}
                 alt="Logo"
-                className="w-56 hover:scale-105 duration-300"
+                className="w-56 md:hover:scale-105 duration-300"
               />
             </Link>
             <p className="text-md mt-7">Contact Us</p>
