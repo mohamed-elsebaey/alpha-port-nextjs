@@ -56,7 +56,7 @@ const Companies = () => {
                 data-aos="fade-up"
                 // data-aos-once="true"
                 data-aos-delay={Company.aosDelay}
-                className="rounded-2xl bg-white md:hover:bg-blueColor/10 shadow-xl duration-300 max-w-[300px] min-h-full min-w-full flex-auto justify-center content-between"
+                className="rounded-2xl bg-white hover:bg-blueColor/10 shadow-xl duration-300 max-w-[300px] min-h-full min-w-full flex-auto justify-center content-between"
               >
                 <Image
                   src={Company.img}
