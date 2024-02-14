@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Logo from "../../public/images/logo/logoFooter.png";
+import Logo from "@/public/images/logo/logoFooter.png";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
 

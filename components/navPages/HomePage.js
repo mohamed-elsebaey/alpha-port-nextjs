@@ -11,9 +11,11 @@ function HomePage() {
       <Companies />
       <main className="w-3/4 mx-auto">
         <Page1 />
-        <Page/>
-        <Page/>
+        <Page />
+        <Page />
       </main>
+      {/* <div className="w-3/4 mx-auto rounded-lg border-2 mt-52"> */}
+      {/* </div> */}
     </>
   );
 }
