@@ -5,7 +5,7 @@ function Layout(props) {
   return (
     <div className="bg-white duration-200 overflow-x-hidden">
       <MainNavigation />
-      <main className="mt-[76px]">{props.children}</main>
+      <main className="mt-[64px] lg:mt-[76px]">{props.children}</main>
       <Footer />
     </div>
   );
