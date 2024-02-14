@@ -3,7 +3,6 @@
 import Image from "next/image";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-// import { Navigation, Pagination } from "swiper/modules";
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 
@@ -15,7 +14,7 @@ import "swiper/css/pagination";
 
 
 
-export default function Page() {
+export default function AutoSlides() {
   return (
     <section data-aos="zoom-in" data-aos-duration="500" className="py-12">
       <div className="container">
@@ -42,7 +41,7 @@ export default function Page() {
           spaceBetween={30}
           centeredSlides={true}
           autoplay={{
-            delay: 2500,
+            delay: 2000,
             disableOnInteraction: false,
           }}
           pagination={{
