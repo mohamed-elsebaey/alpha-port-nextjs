@@ -16,7 +16,7 @@ const bgImage = {
 function ContactUs() {
   return (
     <div className="bg-blueColor/20">
-      <div className="w-3/4 mx-auto shadow-xl">
+      <div className="w-5/6 md:w-3/4 mx-auto shadow-xl">
         <ContactForm />
       </div>
     </div>
