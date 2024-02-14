@@ -49,11 +49,11 @@ export default function AutoSlides() {
           }}
           navigation={true}
           modules={[Autoplay, Pagination, Navigation]}
-          className="mySwiper"
+          className="bg-red-600 h-72"
         >
           {images.map((image, index) => (
-            <SwiperSlide key={index}>
-              <div className="flex h-full w-full items-center justify-center">
+            <SwiperSlide key={index} className="bg-teal-500">
+              <div className="flex w-52 items-center justify-center ">
                 <Image
                   src={image.src}
                   alt={image.alt}

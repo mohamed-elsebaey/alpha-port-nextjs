@@ -120,9 +120,11 @@ const Navbar = () => {
                   </li>
                 ))}
               </ul>
-              <button className=" hidden lg:flex bg-blueColor hover:scale-105 duration-500 text-white px-4 py-2 my-2 rounded-md items-center">
-                Contact Us
-              </button>
+              <Link href="/contact-us">
+                <button className=" hidden lg:flex bg-blueColor hover:scale-105 duration-500 text-white px-4 py-2 my-2 rounded-md items-center">
+                  Contact Us
+                </button>
+              </Link>
               {/* menu button to show links and companies name on a small device */}
               <div className="flex lg:hidden">
                 <button

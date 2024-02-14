@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import Namaa from "@/public/images/logo/namaa.png";
 import AlphaDates from "@/public/images/logo/alphaDates.png";
 import Basiqat from "@/public/images/logo/basiqat1.png";
@@ -12,6 +13,7 @@ const CompaniesData = [
     name: "Namaa",
     description: "شركة نماء للاستثمار واستصلاح الأراضى – 1033 فدان (434 هكتار)",
     aosDelay: "100",
+    link: "/namaa",
   },
   {
     id: 2,
@@ -20,6 +22,7 @@ const CompaniesData = [
     description:
       "شركة الفا هيرب للنباتات الطبية والعطرية – 1800 فدان (756 هكتار)",
     aosDelay: "200",
+    link: "/alpha-herbs",
   },
   {
     id: 3,
@@ -28,6 +31,7 @@ const CompaniesData = [
     description:
       "باسقات لإقامة وإدارة وبيع مزارع النخيل للغير - 750 فدان (294 هكتار)",
     aosDelay: "200",
+    link: "/basiqat",
   },
   {
     id: 4,
@@ -35,6 +39,7 @@ const CompaniesData = [
     name: "Alpha Dates",
     description: "إنتاج وتصدير التمور – 350 فدان",
     aosDelay: "100",
+    link: "/alpha-dates",
   },
 ];
 const Companies = () => {
@@ -51,23 +56,25 @@ const Companies = () => {
           {/* Company Card section  */}
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-14 md:gap-5 cursor-pointer">
             {CompaniesData.map((Company) => (
-              <div
-                key={Company.id}
-                data-aos="fade-up"
-                // data-aos-once="true"
-                data-aos-delay={Company.aosDelay}
-                className="rounded-2xl bg-white hover:bg-blueColor/10 shadow-xl duration-300 max-w-[300px] min-h-full min-w-full flex-auto justify-center content-between"
-              >
-                <Image
-                  src={Company.img}
-                  alt=""
-                  className="h-72 mx-auto duration-300 "
-                />
-                <div className="p-4 text-center">
-                  <h1 className="text-2xl font-bold  ">{Company.name}</h1>
-                  <p className="text-md font-cairo ">{Company.description}</p>
+              <Link href={Company.link}>
+                <div
+                  key={Company.id}
+                  data-aos="fade-up"
+                  // data-aos-once="true"
+                  data-aos-delay={Company.aosDelay}
+                  className="rounded-2xl bg-white hover:bg-blueColor/10 shadow-xl duration-300 max-w-[300px] min-h-full min-w-full flex-auto justify-center content-between"
+                >
+                  <Image
+                    src={Company.img}
+                    alt=""
+                    className="h-72 mx-auto duration-300 "
+                  />
+                  <div className="p-4 text-center">
+                    <h1 className="text-2xl font-bold  ">{Company.name}</h1>
+                    <p className="text-md font-cairo ">{Company.description}</p>
+                  </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
