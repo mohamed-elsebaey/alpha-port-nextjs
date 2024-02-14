@@ -32,6 +32,7 @@ export default function ContactForm() {
             </label>
             <div className="mt-2">
               <input
+                minlength="3"
                 required
                 type="text"
                 name="name"
@@ -55,6 +56,7 @@ export default function ContactForm() {
             <div className="mt-2">
               <input
                 required
+                minlength="10"
                 type="email"
                 name="email"
                 id="email"
@@ -77,6 +79,7 @@ export default function ContactForm() {
             <div className="mt-2">
               <input
                 required
+                minlength="11"
                 type="tel"
                 name="phone-number"
                 id="phone-number"
@@ -99,6 +102,7 @@ export default function ContactForm() {
             <div className="mt-2">
               <textarea
                 required
+                minlength="30"
                 name="message"
                 id="message"
                 rows={4}
