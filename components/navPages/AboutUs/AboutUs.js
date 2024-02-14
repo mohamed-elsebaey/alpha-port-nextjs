@@ -15,7 +15,7 @@ const AboutUs = () => {
       data-aos="fade-up"
       data-aos-duration="500"
       id="about-us"
-      className=" w-4/5 py-20 mx-auto my-20 border-b-[2px] border-t-[2px] border-blueColor "
+      className=" w-4/5 py-20 mx-auto my-28 border-b-[2px] border-t-[2px] border-blueColor "
     >
       <div className="flex justify-center items-center text-center">
         <Title title="6+ YEARS OF EXPERIENCE" des="About Us" />
