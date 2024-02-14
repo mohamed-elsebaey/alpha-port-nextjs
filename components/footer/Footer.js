@@ -40,25 +40,30 @@ const HelpLinks = [
     link: "/",
   },
 ];
-const ResourcesLinks = [
+      
+const CompaniesLinks = [
   {
-    title: "Free Ebooks",
-    link: "/",
+    title: "Namaa",
+    link: "/namaa",
   },
   {
-    title: "How To Blog",
-    link: "/",
+    title: "Alpha Herbs",
+    link: "/alpha-herbs",
   },
   {
-    title: "Subscribe TCJ",
-    link: "/",
+    title: "Basiqat",
+    link: "/basiqat",
+  },
+  {
+    title: "Alpha Dates",
+    link: "/alpha-dates",
   },
 ];
 const Footer = () => {
   return (
     <div className="bg-bgGrayColor text-white">
       <section className="container py-10">
-        <div className=" grid md:grid-cols-3">
+        <div className=" grid lg:grid-cols-3">
           {/* company Details */}
           <div className=" py-8 px-4 ">
             <Link href="">
@@ -125,10 +130,10 @@ const Footer = () => {
             <div className="">
               <div className="py-8 px-4 ">
                 <h1 className="sm:text-xl text-xl font-bold sm:text-left text-justify mb-3">
-                  Resources
+                  Our Companies
                 </h1>
                 <ul className="flex flex-col gap-3">
-                  {ResourcesLinks.map((link) => (
+                  {CompaniesLinks.map((link) => (
                     <li
                       key={link.title}
                       className="cursor-pointer duration-300 hover:text-blueColor text-gray "
