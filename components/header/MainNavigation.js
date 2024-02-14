@@ -219,7 +219,7 @@ const Navbar = () => {
                   <div className="py-6">
                     <Link
                       onClick={() => setMobileMenuOpen(false)}
-                      href="/"
+                      href="/contact-us"
                       className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-bgGrayColor hover:bg-blueColor/20"
                     >
                       Contact Us

@@ -18,8 +18,8 @@ const FooterLinks = [
     link: "/",
   },
   {
-    title: "Services",
-    link: "/",
+    title: "Contact Us",
+    link: "/contact-us",
   },
 ];
 const HelpLinks = [
@@ -40,7 +40,7 @@ const HelpLinks = [
     link: "/",
   },
 ];
-      
+
 const CompaniesLinks = [
   {
     title: "Namaa",
