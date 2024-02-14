@@ -92,7 +92,7 @@ const Footer = () => {
             <div className="">
               <div className="py-8 px-4 ">
                 <h1 className="sm:text-xl text-xl font-bold sm:text-left text-justify mb-3">
-                  Company
+                  Links
                 </h1>
                 <ul className={`flex flex-col gap-3`}>
                   {FooterLinks.map((link) => (
@@ -111,26 +111,7 @@ const Footer = () => {
             <div className="">
               <div className="py-8 px-4 ">
                 <h1 className="sm:text-xl text-xl font-bold sm:text-left text-justify mb-3">
-                  Help
-                </h1>
-                <ul className="flex flex-col gap-3">
-                  {HelpLinks.map((link) => (
-                    <li
-                      key={link.title}
-                      className="cursor-pointer duration-300 hover:text-blueColor text-gray "
-                    >
-                      <Link href={link.link}>
-                        <span>{link.title}</span>
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-            <div className="">
-              <div className="py-8 px-4 ">
-                <h1 className="sm:text-xl text-xl font-bold sm:text-left text-justify mb-3">
-                  Our Companies
+                  Company
                 </h1>
                 <ul className="flex flex-col gap-3">
                   {CompaniesLinks.map((link) => (
