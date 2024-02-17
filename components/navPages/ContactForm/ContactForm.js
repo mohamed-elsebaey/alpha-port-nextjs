@@ -5,10 +5,9 @@ export default function ContactForm() {
 
   return (
     <div
-      data-aos="fade-down"
-      data-aos-once="true"
-      data-aos-delay="100"
-      className=" bg-white px-6 lg:px-8 py-10 "
+      data-aos="fade-up"
+      data-aos-duration="500"
+      className=" bg-white px-6 lg:px-8 py-10"
     >
       <div className="lg:ml-20 xl:ml-36 max-w-2xl text-start">
         <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
