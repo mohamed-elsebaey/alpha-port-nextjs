@@ -150,7 +150,7 @@ const Navbar = () => {
             {/* menu section on the right */}
             <Dialog.Panel
               data-aos="fade-left"
-              className="fixed inset-y-0 right-0 z-50 w-[65%] overflow-y-auto bg-white/75 backdrop-blur-sm px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 "
+              className="fixed inset-y-0 right-0 z-50 w-[75%] overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 "
             >
               <div className="flex items-center justify-between">
                 {/* logo image on the left */}
