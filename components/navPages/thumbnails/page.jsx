@@ -17,7 +17,7 @@ export default function Page() {
   const [thumbsSwiper, setThumbsSwiper] = useState(null)
 
   return (
-    <section className='min-h-screen bg-black py-12'>
+    <section className='min-h-scree'>
       <div className='container'>
         <Swiper
           loop={true}
@@ -28,7 +28,7 @@ export default function Page() {
               thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null
           }}
           modules={[FreeMode, Navigation, Thumbs]}
-          className='h-96 w-full rounded-lg'
+          className='w-full rounded-lg'
         >
           {images.map((image, index) => (
             <SwiperSlide key={index}>
