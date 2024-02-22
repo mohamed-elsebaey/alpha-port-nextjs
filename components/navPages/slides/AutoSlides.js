@@ -3,40 +3,18 @@
 import Image from "next/image";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
-
-import { images } from "../../../lib/images";
+import { images } from "@/lib/images";
 
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-
-
 export default function AutoSlides() {
   return (
     <section data-aos="zoom-in" data-aos-duration="500" className="py-12">
-      <div className="container">
-        {/* <Swiper
-          navigation
-          pagination={{ type: "fraction" }}
-          modules={[Navigation, Pagination]}
-          // onSwiper={(swiper) => console.log(swiper)}
-          className="h-96 w-full rounded-lg"
-        >
-          {images.map((image, index) => (
-            <SwiperSlide key={index}>
-              <div className="flex h-full w-full items-center justify-center">
-                <Image
-                  src={image.src}
-                  alt={image.alt}
-                  className="block h-full w-full object-cover"
-                />
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper> */}
+      <div className="w-5/6  m-auto">
         <Swiper
           spaceBetween={30}
           centeredSlides={true}
@@ -49,16 +27,22 @@ export default function AutoSlides() {
           }}
           navigation={true}
           modules={[Autoplay, Pagination, Navigation]}
-          className="bg-red-600 h-72"
+          className="h-[500px] shadow-xl rounded-xl"
         >
           {images.map((image, index) => (
-            <SwiperSlide key={index} className="bg-teal-500">
-              <div className="flex w-52 items-center justify-center ">
-                <Image
-                  src={image.src}
-                  alt={image.alt}
-                  className="block h-full w-full object-cover"
-                />
+            <SwiperSlide key={index}>
+              <div className="px-20 pb-20 pt-10 min-h-full min-w-full flex flex-col xl:flex-row ">
+                <div className="w-[60%] min-h-full rounded-md">
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    className="h-full w-full object-cover"
+                  />
+                </div>
+                <div className="p-4  text-center w-[40%] flex flex-col items-center justify-center ">
+                  <h1 className="text-2xl font-bold  ">Text</h1>
+                  <p className="text-md font-cairo ">Text</p>
+                </div>
               </div>
             </SwiperSlide>
           ))}

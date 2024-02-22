@@ -8,7 +8,7 @@ function Products() {
       <div className="py-10">
         <div className="container text-bgGrayColor">
           {/* Heading section  */}
-          <div className="text-center my-16">
+          <div className="text-center mt-16">
             <h1 className="text-4xl font-bold ">Our Products</h1>
           </div>
 
