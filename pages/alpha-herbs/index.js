@@ -1,7 +1,6 @@
-import React from 'react'
+import Soon from "@/components/navPages/Soon";
+import React from "react";
 
 export default function AlphaHerbs() {
-  return (
-    <div>AlphaHerbs</div>
-  )
+  return <Soon name="Alpha Herbs" />;
 }

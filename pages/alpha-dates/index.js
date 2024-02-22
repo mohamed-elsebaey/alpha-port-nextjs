@@ -1,7 +1,8 @@
+import Soon from '@/components/navPages/Soon'
 import React from 'react'
 
 export default function AlphaDates() {
   return (
-    <div >AlphaDates</div>
+    <Soon name='Alpha Dates'/>
   )
 }
