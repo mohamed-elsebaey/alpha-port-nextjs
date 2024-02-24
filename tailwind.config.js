@@ -22,7 +22,7 @@ module.exports = {
         cursive2: ["Roboto", "cursive"],
       },
       colors: {
-        blueColor: "#44c8f5",
+        blueColor: "z",
         grayColor: "#212529",
         bgGrayColor: "#333132",
         secondary: "#ffffff",

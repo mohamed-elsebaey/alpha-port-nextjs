@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Img from "../../../public/images/logo/png.png";
+import Img from "../../../public/images/logo/logo.png";
 
 const Hero = () => {
   return (
