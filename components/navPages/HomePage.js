@@ -10,7 +10,6 @@ function HomePage() {
       <Hero />
       <Companies />
       <Products />
-      <AboutUs/>
     </>
   );
 }
